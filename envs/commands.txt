@@ -1,0 +1,45 @@
+pwd
+ls -l
+echo $PATH
+git config --global user.name "Kenza Yahia"
+git config --global user.email "kenzayahia1@gmail.com"
+git config --global color.diff auto
+git config --global color.status auto
+git config --global color.branch auto
+git config --global alias.ci commit
+git config --global alias.co checkout
+git config --global alias.st status
+git config --global alias.br branch
+git clone https://github.com/kenza-y/ILOG.git
+clear
+ls
+ls ILOG
+cd ILOG
+mkdir envs
+cd envs
+touch envs.c
+gcc -c envs.c
+gcc -o envs envs.c
+./envs
+export PATH=.:$PATH
+echo $PATH
+man gcc
+cd ~
+mkdir local
+cd local
+mkdir bin
+export PATH="$HOME/local/bin:$PATH"
+echo $PATH
+mv envs ~/local/bin
+envs
+cd ~
+envs
+cd 
+envs
+mv envs ~/git/ILOG/envs
+cd
+ln -s ~/git/ILOG/envs/envs ~/local/bin/envs
+envs
+
+
+
